@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="conte">
+
+       <p class="tareaTotal">total Array</p>
+       <p class="realizadasTotal">Total tareas realizadas</p>
+       
+       
+    </div>
+  <button id="btnBoton">inseratar en el array</button>
+    <script>
+        // Selecciono el contenido 
+        let conte = document.querySelector('.conte')
+        let btn = document.querySelector('#btnBoton')
+
+        let tareas= [
+            {
+                id:1,
+                Nombre:"Jugar Futbol",
+                checkk: false
+            },
+            {
+                id:2,
+                Nombre:"Jugar Futbol",
+                checkk: false
+            },
+            {
+                id:2,
+                Nombre:"Jugar Futbol",
+                checkk: false
+            }
+
+        ]
+    // recorro el arrary
+            for (const tarea of tareas) {
+                real(tarea.id)
+            }
+
+      //funcion para encontrar la tarea  
+      function real(id) {
+        let buscarTarea = tareas.find((b)=>{b.id===id})
+        
+        console.log(buscarTarea)
+      }     
+    
+
+
+    </script>     
+    </script>
+  </body>
+</html>
